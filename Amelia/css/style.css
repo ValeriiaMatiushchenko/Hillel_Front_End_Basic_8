@@ -1,0 +1,298 @@
+@import url('reset.css');
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Architects Daughter';
+    src: url('../fonts/ArchitectsDaughter-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Global */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #161616;
+    line-height: 30px;
+    background: #D8D8D6;;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h2 {
+    margin-bottom: 50px;
+    text-align: center;
+    color: #000;
+    font-family: 'Architects Daughter';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h3 {
+    color: #161616;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 39px; 
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: #161616;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+
+
+/* Header */
+
+.header {
+    padding: 25px 0;
+    background: #81A36B;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_list {
+    font-size: 18px;
+    display: flex;
+    gap: 30px;
+}
+
+.header_list > li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+/* Hero - Section 1 */
+
+.hero {
+    padding-bottom: 60px;
+}
+
+.flex_hero {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero_title {
+    font-family: 'Architects Daughter';
+    font-size: 62px;
+    line-height: 70px;
+    margin-bottom: 40px;
+}
+
+.hero_inner,
+.hero_image {
+    flex: 1 1 540px;
+}
+
+.hero_inner p {
+    margin-bottom: 20px;
+}
+
+.hero_buttons {
+    font-size: 0;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #161616;
+    border-radius: 6px;
+    background: #81A36B;
+    padding: 14px 34px;
+    cursor: pointer;
+    border: 1px solid #81A36B;
+    margin-left: 23px;
+}
+
+.btn:first-child {
+    margin-left: 0;
+}
+
+.btn_outline {
+    background: transparent;
+}
+
+.hero_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* About - Section 2 */
+
+.about {
+    padding: 60px 0;
+    align-items: center;
+}
+
+.about p {
+    margin: 0 auto;
+    width: 570px;
+    text-align: center;
+}
+
+
+
+/* Features - Section 3 */
+
+.features {
+    padding: 78px 0;
+    background: #81A36B;
+    margin: 60px 0;
+} 
+
+.flex_features {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+
+.flex_features > li {
+    text-align: center;
+}
+
+.flex_features svg {
+    margin-bottom: 25px;
+    width: 80px;
+    height: 80px;
+}
+
+.flex_features p {
+    color: #161616;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+/* How we are working - Section 3 */
+
+.working {
+    padding: 60px 0;
+}
+
+.flex_working {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.working_inner,
+.working_image {
+    width: 540px;
+}
+
+.working_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Our Works - Section 4 */
+
+.our_works {
+    padding: 60px 0;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    width: 350px;
+}
+
+.card > div {
+    display: flex;
+    flex-flow: column;
+    border-radius: 6px;
+    background: #81A36B;
+    padding: 15px;
+    height: 100%;
+}
+
+.card img {
+    display: block;
+    height: 155px;
+    margin-bottom: 23px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+
+/* Footer - Section 5 */
+
+.footer {
+    padding: 50px 0;
+    background: #81A36B;
+    text-align: center;
+}
+
+.footer img {
+    margin-bottom: 25px;
+}
+
+.footer p {
+    margin-bottom: 15px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
